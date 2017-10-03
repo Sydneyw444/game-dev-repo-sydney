@@ -1,0 +1,81 @@
+<h2 align=center> Javascript by Sydney~</h2>
+
+<br>
+
+Enter your name: <input id="myText01" type=text>
+<input type=button value="Click Me" onClick="{
+
+	// alert(document.all.myText01.value);
+
+	// alert(document.getElementById('myText01').value);
+
+	if (document.getElementById('myText01').value == '') {alert('Please enter Your Name')} 
+	
+	else { document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value}
+
+}">
+
+
+<div id="myDiv01" style="font-weight: bold; font-size: 35px">[name]</div>
+
+
+
+
+
+
+
+Enter a number to square: <input id="myText02" type=number>
+
+<input type=button value="Square" onClick="{
+
+	if (document.getElementById('myText01').value == '') {alert('Please enter a number')} 
+	
+	else { document.getElementById('myDiv02').innerHTML = document.getElementById('myText02').value * document.getElementById('myText02').value }
+
+}">
+
+<div id="myDiv02" style="font-weight: bold; font-size: 35px;">[number]</div>
+
+
+How are you feeling today?: <input id="myText03" type=text>
+<input type=button value="Reply" onClick="{
+
+	if (document.getElementById('myText03').value == '') {alert('Please enter how you are feeling')} 
+	
+	else { document.getElementById('myDiv03').innerHTML = (document.getElementById('myText03').value)
+}
+
+}">
+
+
+<br> 
+
+<b style="font-size: 35px;">So you're feeling <div id="myDiv03" style="display:inline">_____</div> today?</b>
+
+<br>
+
+Want to know the time?
+<button onclick="{ 
+
+getElementById('demo').innerHTML=Date()
+
+}">Time</button> 
+
+<br>
+
+<b id="demo" style="font-size: 35px">[time]</b> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

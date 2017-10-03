@@ -1,0 +1,19 @@
+<h1 align=center>t1a05-if-Sydney</h1>
+
+Enter a number:
+
+<input id="myText01" type=number value=7>
+<div id="myDiv01" style="font-size:40px; color:teal;">...</div>
+<input type=button value="First" onClick="{
+
+	myNumber = document.getElementById('myText01').value
+	document.getElementById('myDiv01').innerHTML = ''
+	if (myNumber == 7) {document.getElementById('myDiv01').innerHTML += 'Number is 7<br>'}
+	else {document.getElementById('myDiv01').innerHTML += 'Number is not 7<br>'}
+	if ( (myNumber <3) || (myNumber >20) ) {document.getElementById('myDiv01').innerHTML += 'Less than 3 or more than 20<br>'}
+	if (myNumber <=0) {document.getElementById('myDiv01').innerHTML += 'Less than or equal to zero<br>'}
+	if (myNumber >=10) {document.getElementById('myDiv01').innerHTML += 'More than or equal to 10<br>'}
+	if ( (myNumber <-5) && (myNumber >-50) ) {document.getElementById('myDiv01').innerHTML += 'Less than -5 and more than -50<br>'}
+	if (myNumber != 9) {document.getElementById('myDiv01').innerHTML += 'Number is not 9<br>'}
+
+}">
