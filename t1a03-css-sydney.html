@@ -1,20 +1,104 @@
+<head>
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-<body style="border: 5px solid #80d2ce; background: linear-gradient(#eafffe, #ffe1cc);">
-<br>
-<h1 align=center style="color: #3e9692; font-family: Brush Script MT"> CSS by Sydney~</h1>
-<br>
-<br>
-<br>
-<br>
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{background-color:#cae8ab}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+</head>
+<body style="border: 15px inset #80d2ce; background: linear-gradient(#eafffe, #ffe1cc);">
+
+    <br>
+    <h1 align=center style="color: #3e9692; font-family: Brush Script MT"> CSS by Sydney~</h1>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
-Not cool
-<p id="myp1" style="color: #3e9692" onMouseOver="{ document.getElementById('myp1').innerHTML = 'REALLY cool'}" onMouseOut="{ document.getElementById('myp1').innerHTML = 'Sorta Cool'}">Really Cool</p>
-<a href="http://www.blooberry.com/indexdot/css/propindex/all.htm" target="_blank" style="font-size:150%;">Css Sylladex</a>
-<p style="text-align: center; color: #3e9692; font-family: Helvetica"><i><b>testo presto~</b></i></p>
-<br>
-<input type="button" onclick="location.href='https://sydneyw444.github.io/game-dev-repo-sydney/';" value="Go Back">
+    Not cool
+    <p id="myp1" style="color: #3e9692" onMouseOver="{ document.getElementById('myp1').innerHTML = 'REALLY cool'}" onMouseOut="{ document.getElementById('myp1').innerHTML = 'Sorta Cool'}">Really Cool</p>
+    <a href="http://www.blooberry.com/indexdot/css/propindex/all.htm" target="_blank" style="font-size:150%;">Css index</a>
+    <br>
+    <br>
 
+    <div class="dropdown">
+        <span>Put yo mouse over me!</span>
+        <div class="dropdown-content">
+            <p>YOOOOOOOOO!</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Awesomeness Points</th>
+        </tr>
+        <tr>
+            <td>Sydney</td>
+            <td>+∞</td>
+        </tr>
+        <tr>
+            <td>Mum</td>
+            <td>50000000000</td>
+        </tr>
+        <tr>
+            <td>Dad</td>
+            <td>50000000000</td>
+        </tr>
+        <tr>
+            <td>Cat</td>
+            <td>5000000</td>
+        </tr>
+        <tr>
+            <td>Life</td>
+            <td>-1000000000000000000000</td>
+        </tr>
+        <tr>
+            <td>School</td>
+            <td>-∞</td>
+        </tr>
+    </table>
+
+    <button type="button" onclick="myFunction()">Set background color</button>
+
+    <script>
+    function myFunction() {
+        document.body.style.bodyColor = "red";
+    }
+    </script>
 
 </body>
-
