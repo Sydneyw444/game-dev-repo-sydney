@@ -3,6 +3,7 @@
     onload="myOnLoad()",
     ontouchstart="myTouchStart()",
     ontouchmove="myTouchMove()",
+    ontouchend="myTouchEnd()",
 >
 <script>
 var x = 0;
@@ -21,6 +22,13 @@ function myTouchStart() {
 }
 function myTouchMove() {
     document.getElementById('myDiv01').innerHTML = '<p style="color:SlateBlue;">onTouchMove event activated</p>';
+}
+function myTouchEnd() {
+    document.getElementById('myDiv01').innerHTML = '<p style="color:tomato;">onTouchEnd event activated</p>';
+}
+function myInput() {
+    var x = document.getElementById("myInput01").value;
+    document.getElementById("input").innerHTML = "OnInput: " + x;
 }
 </script>
     <h2 align=center>Events by Sydney~</h2>
@@ -48,8 +56,9 @@ function myTouchMove() {
         <li/>OnLoad is active
         <li/>OnTouchStart is active
         <li/>OnTouchMove is active
-        <li/>
-        <li/>
+        <li/>OnTouchEnd is active
+        <li/>Write something <input type="text" id="myInput01" oninput="myInput()">
+        <p id="input"></p>
         <li/>
         <li/>
         <li/>
