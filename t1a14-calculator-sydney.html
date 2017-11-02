@@ -1,0 +1,22 @@
+<body>
+
+    <h2 align=center>Calculator by Sydney~</h2>
+    <br>
+    <input id="myThree" type=number value="3">
+    <input id="myPlus" type=button value="+">
+    <input id="myFour" type=number value="4">
+    <br>
+
+    <input type=button value="=" onClick="{
+        myNum3 = parseFloat(document.getElementById('myThree').value)
+        myNum4 = parseFloat(document.getElementById('myFour').value)
+        //mySign =
+
+        document.getElementById('myDiv01').innerHTML +=  myNum3 + myNum4 + '<br>'
+    }">
+    <input type=button value="Clear Output" onclick="{
+        document.getElementById('myDiv01').innerHTML =  ''
+    }">
+
+    <div id="myDiv01">...<br></div>
+</body>
