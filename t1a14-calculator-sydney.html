@@ -1,0 +1,118 @@
+<h2 align=center>Calculator by Sydney~</h2>
+
+<br>
+<b>Possible Functions</b>
+<table border=2>
+    <tr><td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '+' }"><b> + </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '-' }"><b> - </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = 'x' }"><b> x </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '*' }"><b> * </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '÷' }"><b> ÷ </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '<' }"><b> < </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '>' }"><b> > </b></td>
+    </tr>
+    <tr>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = '2' }"><b> 2 </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'sin' }"><b> sin </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'cos' }"><b> cos </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'tan' }"><b> tan </b></td>
+    </tr>
+
+</table>
+<br>
+<br>
+
+<input id="myText01"  type=number value="3"  >
+<input id="myText02"  type=text value="+"  >
+<input id="myText03"  type=number value="4"  > <br>
+
+<input type=button value=" = " onClick="{
+    myNum1 = parseFloat(document.getElementById('myText01').value)
+    mySign = document.getElementById('myText02').value
+    myNum2 = parseFloat(document.getElementById('myText03').value)
+
+    myTotal = 0
+
+    if (mySign == '+'){
+        myTotal = myNum1 + myNum2
+    }
+    else if (mySign == '-'){
+        myTotal = myNum1 - myNum2
+    }
+    else if (mySign == 'x'){
+        myTotal = myNum1 * myNum2
+    }
+    else if (mySign == '*'){
+        myTotal = myNum1 * myNum2
+    }
+    else if (mySign == '/'){
+        myTotal = myNum1 / myNum2
+    }
+    else if (mySign == '÷'){
+        myTotal = myNum1 / myNum2
+    }
+    else if (mySign == '<'){
+        myTotal = myNum1 < myNum2
+    }
+    else if (mySign == '>'){
+        myTotal = myNum1 > myNum2
+    }
+
+    else if (mySign == '>'){
+        myTotal = myNum1 > myNum2
+    }
+
+    else if (mySign == '2'){
+        myTotal = myNum1 * myNum1
+    }
+
+    document.getElementById('myDiv01').innerHTML =
+    myNum1 + mySign + myNum2 + ' = ' + myTotal + '<br>' +
+    document.getElementById('myDiv01').innerHTML
+
+}" >
+
+<div id="myDiv01">....<br></div>
+
+<br>
+<input id="myText04"  type=number value="6"  >
+<input id="myText05"  type=text value="2"  >
+<br>
+<input type=button value=" = " onClick="{
+    myNum3 = parseFloat(document.getElementById('myText04').value)
+    mySignB = document.getElementById('myText05').value
+
+    myTotalB = 0
+
+    if (mySignB == '2'){
+        myTotalB = myNum3 * myNum3
+    }
+
+    else if (mySignB == 'sin'){
+        myTotalB =  Math.sin(myNum3)
+    }
+
+    else if (mySignB == 'cos'){
+        myTotalB =  Math.cos(myNum3)
+    }
+
+    else if (mySignB == 'tan'){
+        myTotalB =  Math.tan(myNum3)
+    }
+
+    document.getElementById('myDiv02').innerHTML =
+    myNum3 + ' ' + mySignB + ' = ' + myTotalB + '<br>' +
+    document.getElementById('myDiv02').innerHTML
+
+}" >
+
+<div id="myDiv02">....<br></div>
+
+<input type=button value="Clear All" onClick="{
+    document.getElementById('myText01').value =  ''
+    document.getElementById('myText02').value =  ''
+    document.getElementById('myText03').value =  ''
+    document.getElementById('myText04').value =  ''
+    document.getElementById('myDiv01').innerHTML =  ''
+    document.getElementById('myDiv02').innerHTML =  ''
+}" >
