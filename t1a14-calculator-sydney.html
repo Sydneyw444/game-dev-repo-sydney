@@ -1,20 +1,18 @@
 <h2 align=center>Calculator by Sydney~</h2>
-<br>
-<a href='https://sydneyw444.github.io/game-dev-repo-sydney/';">Go to Github</a>
-<br>
+
 <br>
 <b>Possible Functions</b>
 <table border=2>
     <tr><td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '+' }"><b> + </b></td>
         <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '-' }"><b> - </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = 'x' }"><b> x </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '*' }"><b> * </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = 'x' }"><p> x </p></td>
         <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '÷' }"><b> ÷ </b></td>
         <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '<' }"><b> < </b></td>
         <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '>' }"><b> > </b></td>
     </tr>
     <tr>
         <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = '2' }"><b> 2 </b></td>
+        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = '√' }"><b> √ </b></td>
         <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'sin' }"><b> sin </b></td>
         <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'cos' }"><b> cos </b></td>
         <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'tan' }"><b> tan </b></td>
@@ -100,6 +98,10 @@
 
     else if (mySignB == 'tan'){
         myTotalB =  Math.tan(myNum3)
+    }
+
+    else if (mySignB == '√'){
+        myTotalB =  Math.sqrt(myNum3)
     }
 
     document.getElementById('myDiv02').innerHTML =
