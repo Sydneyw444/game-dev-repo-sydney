@@ -1,122 +1,136 @@
-<h2 align=center>Calculator by Sydney~</h2>
-
+<body align=center style="background-color: #c1c1c1;">
 <br>
-<b>Possible Functions</b>
-<table border=2>
-    <tr><td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '+' }"><b> + </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '-' }"><b> - </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = 'x' }"><p> x </p></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '÷' }"><b> ÷ </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '<' }"><b> < </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '>' }"><b> > </b></td>
-    </tr>
-    <tr>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = '2' }"><b> 2 </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = '√' }"><b> √ </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'sin' }"><b> sin </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'cos' }"><b> cos </b></td>
-        <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'tan' }"><b> tan </b></td>
-    </tr>
+    <h2>Calculator by Sydney~</h2>
 
-</table>
-<br>
-<br>
+    <br><br><br><br><br><br><br><br><br><br><br>
 
-<input id="myText01"  type=number value="3"  >
-<input id="myText02"  type=text value="+"  >
-<input id="myText03"  type=number value="4"  > <br>
+    <b >Possible Functions</b>
 
-<input type=button value=" = " onClick="{
-    myNum1 = parseFloat(document.getElementById('myText01').value)
-    mySign = document.getElementById('myText02').value
-    myNum2 = parseFloat(document.getElementById('myText03').value)
+    <br>
+    <br>
+    <table border="10" align=center style="background-color: #efefef;">
+        <tr><td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '+' }"><b> + </b></td>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '-' }"><b> - </b></td>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = 'x' }"><p> x </p></td>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '÷' }"><b> ÷ </b></td>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '<' }"><b> < </b></td>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText02').value = '>' }"><b> > </b></td>
+        </tr>
+        <tr>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = '2' }"><b> 2 </b></td>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = '√' }"><b> √ </b></td>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'sin' }"><b> sin </b></td>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'cos' }"><b> cos </b></td>
+            <td style="width:25; height:25;" align=center onclick="{ document.getElementById('myText05').value = 'tan' }"><b> tan </b></td>
+        </tr>
 
-    myTotal = 0
+    </table>
 
-    if (mySign == '+'){
-        myTotal = myNum1 + myNum2
-    }
-    else if (mySign == '-'){
-        myTotal = myNum1 - myNum2
-    }
-    else if (mySign == 'x'){
-        myTotal = myNum1 * myNum2
-    }
-    else if (mySign == '*'){
-        myTotal = myNum1 * myNum2
-    }
-    else if (mySign == '/'){
-        myTotal = myNum1 / myNum2
-    }
-    else if (mySign == '÷'){
-        myTotal = myNum1 / myNum2
-    }
-    else if (mySign == '<'){
-        myTotal = myNum1 < myNum2
-    }
-    else if (mySign == '>'){
-        myTotal = myNum1 > myNum2
-    }
+    <br><br>
 
-    else if (mySign == '>'){
-        myTotal = myNum1 > myNum2
-    }
+    <input id="myText01"  type=number value="3" style="background-color: #efefef;">
+    <input id="myText02"  type=text value="+" style="background-color: #efefef;">
+    <input id="myText03"  type=number value="4" style="background-color: #efefef;">
 
-    else if (mySign == '2'){
-        myTotal = myNum1 * myNum1
-    }
+    <br><br>
 
-    document.getElementById('myDiv01').innerHTML =
-    myNum1 + mySign + myNum2 + ' = ' + myTotal + '<br>' +
-    document.getElementById('myDiv01').innerHTML
+    <input type=button value=" = " style="background-color: #ffffff;" onClick="{
+        myNum1 = parseFloat(document.getElementById('myText01').value)
+        mySign = document.getElementById('myText02').value
+        myNum2 = parseFloat(document.getElementById('myText03').value)
 
-}" >
+        myTotal = 0
 
-<div id="myDiv01">....<br></div>
+        if (mySign == '+'){
+            myTotal = myNum1 + myNum2
+        }
+        else if (mySign == '-'){
+            myTotal = myNum1 - myNum2
+        }
+        else if (mySign == 'x'){
+            myTotal = myNum1 * myNum2
+        }
+        else if (mySign == '*'){
+            myTotal = myNum1 * myNum2
+        }
+        else if (mySign == '/'){
+            myTotal = myNum1 / myNum2
+        }
+        else if (mySign == '÷'){
+            myTotal = myNum1 / myNum2
+        }
+        else if (mySign == '<'){
+            myTotal = myNum1 < myNum2
+        }
+        else if (mySign == '>'){
+            myTotal = myNum1 > myNum2
+        }
 
-<br>
-<input id="myText04"  type=number value="6"  >
-<input id="myText05"  type=text value="2"  >
-<br>
-<input type=button value=" = " onClick="{
-    myNum3 = parseFloat(document.getElementById('myText04').value)
-    mySignB = document.getElementById('myText05').value
+        else if (mySign == '>'){
+            myTotal = myNum1 > myNum2
+        }
 
-    myTotalB = 0
+        else if (mySign == '2'){
+            myTotal = myNum1 * myNum1
+        }
 
-    if (mySignB == '2'){
-        myTotalB = myNum3 * myNum3
-    }
+        document.getElementById('myDiv01').innerHTML =
+        myNum1 + mySign + myNum2 + ' = ' + myTotal + '<br>' +
+        document.getElementById('myDiv01').innerHTML
 
-    else if (mySignB == 'sin'){
-        myTotalB =  Math.sin(myNum3)
-    }
+    }" >
 
-    else if (mySignB == 'cos'){
-        myTotalB =  Math.cos(myNum3)
-    }
+    <div id="myDiv01">___<br></div>
 
-    else if (mySignB == 'tan'){
-        myTotalB =  Math.tan(myNum3)
-    }
+    <br>
 
-    else if (mySignB == '√'){
-        myTotalB =  Math.sqrt(myNum3)
-    }
+    <input id="myText04" type=number value="6" style="background-color: #efefef;">
+    <input id="myText05" type=text value="2" style="background-color: #efefef;">
 
-    document.getElementById('myDiv02').innerHTML =
-    myNum3 + ' ' + mySignB + ' = ' + myTotalB + '<br>' +
-    document.getElementById('myDiv02').innerHTML
+    <br><br>
 
-}" >
+    <input type=button value=" = " style="background-color: #ffffff;" onClick="{
+        myNum3 = parseFloat(document.getElementById('myText04').value)
+        mySignB = document.getElementById('myText05').value
 
-<div id="myDiv02">....<br></div>
+        myTotalB = 0
 
-<input type=button value="Clear All" onClick="{
-    document.getElementById('myText01').value =  ''
-    document.getElementById('myText02').value =  ''
-    document.getElementById('myText03').value =  ''
-    document.getElementById('myText04').value =  ''
-    document.getElementById('myDiv01').innerHTML =  ''
-    document.getElementById('myDiv02').innerHTML =  ''
-}" >
+        if (mySignB == '2'){
+            myTotalB = myNum3 * myNum3
+        }
+
+        else if (mySignB == 'sin'){
+            myTotalB =  Math.sin(myNum3)
+        }
+
+        else if (mySignB == 'cos'){
+            myTotalB =  Math.cos(myNum3)
+        }
+
+        else if (mySignB == 'tan'){
+            myTotalB =  Math.tan(myNum3)
+        }
+
+        else if (mySignB == '√'){
+            myTotalB =  Math.sqrt(myNum3)
+        }
+
+        document.getElementById('myDiv02').innerHTML =
+        myNum3 + ' ' + mySignB + ' = ' + myTotalB + '<br>' +
+        document.getElementById('myDiv02').innerHTML
+
+    }" >
+
+    <div id="myDiv02">___<br></div>
+
+    <br>
+
+    <input type=button value="Clear All" style="background-color: #ffffff;" onClick="{
+        document.getElementById('myText01').value =  ''
+        document.getElementById('myText02').value =  ''
+        document.getElementById('myText03').value =  ''
+        document.getElementById('myText04').value =  ''
+        document.getElementById('myDiv01').innerHTML =  ''
+        document.getElementById('myDiv02').innerHTML =  ''
+    }" >
+</body>
