@@ -1,7 +1,7 @@
 <body Style="background-color:#191919;" onkeydown="{
 
     if (String.fromCharCode(event.keyCode) =='W'){
-        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 25 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 35 + 'px'
         document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.top + ' ,  '+ document.getElementById('myB').style.top
         if (myCollide('myA', 'myB')  == true) {
             document.getElementById('myOut01').innerHTML =  'You killed red!';
@@ -53,7 +53,7 @@
     }
 
     if (String.fromCharCode(event.keyCode) =='A'){
-        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 25 + 'px'
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 35 + 'px'
         document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
         if (myCollide('myA', 'myB')  == true) {
             document.getElementById('myOut01').innerHTML =  'You killed red!';
@@ -105,7 +105,7 @@
     }
 
     if (String.fromCharCode(event.keyCode) =='S'){
-        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 25 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 35 + 'px'
         document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.top + ' ,  '+ document.getElementById('myB').style.top
         if (myCollide('myA', 'myB')  == true) {
             document.getElementById('myOut01').innerHTML =  'You killed red!';
@@ -157,7 +157,7 @@
     }
 
     if (String.fromCharCode(event.keyCode) =='D'){
-        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 25 + 'px'
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 35 + 'px'
         document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
         if (myCollide('myA', 'myB')  == true) {
             document.getElementById('myOut01').innerHTML =  'You killed red!';
