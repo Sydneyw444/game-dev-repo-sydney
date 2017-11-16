@@ -1,0 +1,258 @@
+<body Style="background-color:#191919;" onkeydown="{
+
+    if (String.fromCharCode(event.keyCode) =='W'){
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 25 + 'px'
+        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.top + ' ,  '+ document.getElementById('myB').style.top
+        if (myCollide('myA', 'myB')  == true) {
+            document.getElementById('myOut01').innerHTML =  'You killed red!';
+            addOne();
+            document.getElementById('myB').style.left = '-200px';
+        }
+        if (myCollide('myA', 'myC')  == true) {
+            if (killCount == 1){
+                document.getElementById('myOut01').innerHTML =  'You killed orange!';
+                addOne();
+                document.getElementById('myC').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myD')  == true) {
+            if (killCount == 2){
+                document.getElementById('myOut01').innerHTML =  'You killed yellow!';
+                addOne();
+                document.getElementById('myD').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myE')  == true) {
+            if (killCount == 3){
+                document.getElementById('myOut01').innerHTML =  'You killed green!';
+                addOne();
+                document.getElementById('myE').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myF')  == true) {
+            if (killCount == 4){
+                document.getElementById('myOut01').innerHTML =  'You killed blue!';
+                addOne();
+                document.getElementById('myF').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myG')  == true) {
+            if (killCount == 5){
+                document.getElementById('myOut01').innerHTML =  'You killed indigo!';
+                addOne();
+                document.getElementById('myG').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myH')  == true) {
+            if (killCount == 6){
+                document.getElementById('myOut01').innerHTML =  'You killed violet!';
+                addOne();
+                document.getElementById('myH').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+    }
+
+    if (String.fromCharCode(event.keyCode) =='A'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 25 + 'px'
+        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
+        if (myCollide('myA', 'myB')  == true) {
+            document.getElementById('myOut01').innerHTML =  'You killed red!';
+            addOne();
+            document.getElementById('myB').style.left = '-200px';
+        }
+        if (myCollide('myA', 'myC')  == true) {
+            if (killCount == 1){
+                document.getElementById('myOut01').innerHTML =  'You killed orange!';
+                addOne();
+                document.getElementById('myC').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myD')  == true) {
+            if (killCount == 2){
+                document.getElementById('myOut01').innerHTML =  'You killed yellow!';
+                addOne();
+                document.getElementById('myD').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myE')  == true) {
+            if (killCount == 3){
+                document.getElementById('myOut01').innerHTML =  'You killed green!';
+                addOne();
+                document.getElementById('myE').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myF')  == true) {
+            if (killCount == 4){
+                document.getElementById('myOut01').innerHTML =  'You killed blue!';
+                addOne();
+                document.getElementById('myF').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myG')  == true) {
+            if (killCount == 5){
+                document.getElementById('myOut01').innerHTML =  'You killed indigo!';
+                addOne();
+                document.getElementById('myG').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myH')  == true) {
+            if (killCount == 6){
+                document.getElementById('myOut01').innerHTML =  'You killed violet!';
+                addOne();
+                document.getElementById('myH').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+    }
+
+    if (String.fromCharCode(event.keyCode) =='S'){
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 25 + 'px'
+        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.top + ' ,  '+ document.getElementById('myB').style.top
+        if (myCollide('myA', 'myB')  == true) {
+            document.getElementById('myOut01').innerHTML =  'You killed red!';
+            addOne();
+            document.getElementById('myB').style.left = '-200px';
+        }
+        if (myCollide('myA', 'myC')  == true) {
+            if (killCount == 1){
+                document.getElementById('myOut01').innerHTML =  'You killed orange!';
+                addOne();
+                document.getElementById('myC').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myD')  == true) {
+            if (killCount == 2){
+                document.getElementById('myOut01').innerHTML =  'You killed yellow!';
+                addOne();
+                document.getElementById('myD').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myE')  == true) {
+            if (killCount == 3){
+                document.getElementById('myOut01').innerHTML =  'You killed green!';
+                addOne();
+                document.getElementById('myE').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myF')  == true) {
+            if (killCount == 4){
+                document.getElementById('myOut01').innerHTML =  'You killed blue!';
+                addOne();
+                document.getElementById('myF').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myG')  == true) {
+            if (killCount == 5){
+                document.getElementById('myOut01').innerHTML =  'You killed indigo!';
+                addOne();
+                document.getElementById('myG').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myH')  == true) {
+            if (killCount == 6){
+                document.getElementById('myOut01').innerHTML =  'You killed violet!';
+                addOne();
+                document.getElementById('myH').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+    }
+
+    if (String.fromCharCode(event.keyCode) =='D'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 25 + 'px'
+        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
+        if (myCollide('myA', 'myB')  == true) {
+            document.getElementById('myOut01').innerHTML =  'You killed red!';
+            addOne();
+            document.getElementById('myB').style.left = '-200px';
+        }
+        if (myCollide('myA', 'myC')  == true) {
+            if (killCount == 1){
+                document.getElementById('myOut01').innerHTML =  'You killed orange!';
+                addOne();
+                document.getElementById('myC').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myD')  == true) {
+            if (killCount == 2){
+                document.getElementById('myOut01').innerHTML =  'You killed yellow!';
+                addOne();
+                document.getElementById('myD').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myE')  == true) {
+            if (killCount == 3){
+                document.getElementById('myOut01').innerHTML =  'You killed green!';
+                addOne();
+                document.getElementById('myE').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myF')  == true) {
+            if (killCount == 4){
+                document.getElementById('myOut01').innerHTML =  'You killed blue!';
+                addOne();
+                document.getElementById('myF').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myG')  == true) {
+            if (killCount == 5){
+                document.getElementById('myOut01').innerHTML =  'You killed indigo!';
+                addOne();
+                document.getElementById('myG').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+        if (myCollide('myA', 'myH')  == true) {
+            if (killCount == 6){
+                document.getElementById('myOut01').innerHTML =  'You killed violet!';
+                addOne();
+                document.getElementById('myH').style.left = '-200px';}
+            else {document.getElementById('myOut01').innerHTML =  'Wrong colour.'}
+        }
+    }
+}">
+<script>
+var killCount = 0;
+
+function addOne() {
+    killCount = killCount + 1;
+    document.getElementById("killCount").innerHTML = killCount;
+}
+
+function myCollide(my1, my2){
+    left1   = parseInt(document.getElementById(my1).style.left)
+    right1  = left1 + parseInt(document.getElementById(my1).style.width)
+    top1    = parseInt(document.getElementById(my1).style.top)
+    bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+
+    left2   = parseInt(document.getElementById(my2).style.left)
+    right2  = left2 + parseInt(document.getElementById(my2).style.width)
+    top2    = parseInt(document.getElementById(my2).style.top)
+    bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+    if ((right1  >=  left2  ) && (bottom1 >=  top2   ) && (left1   <=  right2 ) && (top1    <=  bottom2) ){
+        return true
+    }
+}
+
+</script>
+<audio controls>
+
+    <source src="PaintItBlack.mp3" type="audio/mpeg">
+    </audio>
+    <br><br><br><br><br>
+
+
+    <span style="color:#666666;">Colours destroyed: </span> <span id="killCount" style="color:#666666;">0</span>
+
+    <div id="myOut01" style="color:#666666;">...</div>
+
+    <p style="color:#666666;">Use WASD</p>
+
+    <img  id="myB"  src="2Red.png"  style="position:absolute; width:50px; height:50px; left:130px; top:50px">
+    <img  id="myA"  src="2Grey.png"  style="position:absolute; width:50px; height:50px; left:30px; top:50px">
+    <img  id="myC"  src="2Orange.png"  style="position:absolute; width:50px; height:50px; left:750px; top:55px">
+    <img  id="myD"  src="2Yellow.png"  style="position:absolute; width:50px; height:50px; left:350px; top:150px">
+    <img  id="myE"  src="2Green.png"  style="position:absolute; width:50px; height:50px; left:800px; top:555px">
+    <img  id="myF"  src="2Blue.png"  style="position:absolute; width:50px; height:50px; left:20px; top:400px">
+    <img  id="myG"  src="2Indigo.png"  style="position:absolute; width:50px; height:50px; left:1100px; top:800px">
+    <img  id="myH"  src="2Violet.png"  style="position:absolute; width:50px; height:50px; left:300px; top:750px">
+
+
+</body>
