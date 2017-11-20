@@ -162,6 +162,11 @@
     if (String.fromCharCode(event.keyCode) =='D'){
         document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 35 + 'px'
         document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
+        if (myCollide('myA', 'myB')  == true) {
+            document.getElementById('myOut01').innerHTML =  'You killed red!';
+            addOne();
+            document.getElementById('myB').style.left = '-200px';
+        }
         if (myCollide('myA', 'myC')  == true) {
             if (killCount == 1){
                 document.getElementById('myOut01').innerHTML =  'You killed orange!';
