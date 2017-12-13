@@ -1,11 +1,11 @@
 
-<body id="myBody"  style=" background-size: 9000px 900px;  background-image: url('BackGround.png'); background-repeat: repeat-x;  ">
+<body id="myBody"  style=" background-size: 1200px 800px;  background-image: url('Back.jpg'); background-repeat: repeat-x;  ">
 
 <input type=button value="Background Go" onclick="{
        myX = 0
        myY = 0
        myCounter1 = setInterval(function(){
-             myX += -8;
+             myX += 8;
              myY += 0;
              document.getElementById('myBody').style.backgroundPosition = myX + 'px '+ myY+'px';
 
@@ -20,8 +20,8 @@
    document.getElementById('myDiv01').innerHTML = 'Background stopped at position ' + document.getElementById('myBody').style.backgroundPosition
 
 }">
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<center><img src="CyaWalkRIGHT.gif" style="width:90; height: 125;"></center>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<center><img src="Char.gif" style="postion: absolute; width:321; height: 270; margin-top:280; margin-left:250;"></center>
+
 <div id="myDiv01">...</div>
 </body>
