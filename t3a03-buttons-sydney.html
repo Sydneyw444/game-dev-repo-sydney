@@ -25,9 +25,13 @@
   document.all.myArea01.value = '3x3=' + myX * myX;
 }">
 <input type=text id="myText02" value=13>
-<input type=button value="Variables 2" onclick="{
+<input type=button value="Variables Squared" onclick="{
   myX = document.all.myText02.value;
-  document.all.myArea01.value = myX + 'x3=' + myX * myX;
+  document.all.myArea01.value = myX + 'x2=' + myX * myX;
+}">
+<input type=button value="Variables Cubed" onclick="{
+  myX = document.all.myText02.value;
+  document.all.myArea01.value = myX + 'x3=' + myX * myX * myX;
 }">
 <input type=button value="Loop" onclick="{
   for (myLoop= 1; myLoop <=  3; myLoop++){
@@ -44,7 +48,7 @@
   }
 }">
 <input type=button value="Functions" onclick="{
-  myPass = 'Really not fun, ';
+  myPass = 'Kinda stupid, ';
   myFun(myPass);
 }">
 </body>
