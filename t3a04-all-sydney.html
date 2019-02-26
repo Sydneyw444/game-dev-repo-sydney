@@ -1,0 +1,82 @@
+<body style="background: linear-gradient(#E9D6FD, #594380);">
+<script>
+  function my01(){
+    document.all.myArea01.value = 'wow it worked'
+  }
+  function my02(){
+    document.all.myArea01.value = document.all.myText01.value
+  }
+</script>
+<h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">All by Sydney</h1>
+<a href="index.html" style="color: #000000;">Go back</a>
+<br>
+<br>
+<input type=text id="myText01" value="7">
+<br>
+<textarea id="myArea01" rows=4 cols=70></textarea>
+<br>
+<input type=button value="loops" onclick="{
+  var text = '';
+  var i;
+  for (i = 0; i < 5; i++) {
+    text += 'The number is ' + i + '. ';
+  }
+  document.getElementById('myArea01').innerHTML = text;
+}">
+<input type=button value="Output and function" onclick="{
+  my01()
+}">
+
+<input type=button value="Input and function" onclick="{
+  document.all.myArea01.value = document.all.myText01.value
+}">
+<input type=button value="Decisions" onclick="{
+  x = document.all.myText01.value
+  if (x == 9){
+    document.all.myArea01.value = 'itS A NINEEEEE!'
+  }
+  else {
+    document.all.myArea01.value = 'its not a nine...'
+  }
+}">
+
+<input type=button value="Arrays" onclick="{
+  myMax = 3
+  myArray = new Array(myMax)
+  myArray[1] = 'Meagan'
+  myArray[2] = 'Alexis'
+  myArray[3] = 'Chelsie'
+  document.all.myArea01.value = ''
+  for (x = 1; x <= myMax; x++){
+    document.all.myArea01.value += myArray[x] + ', '
+  }
+}">
+<input type=button value="Events onMouseOver" onmouseover="{
+  document.all.myArea01.value = 'Trash'
+}">
+<input type=button value="Object Example" onclick="{
+  person = {
+    firstname: 'Erin',
+    lastname: 'Stark',
+    age: 19,
+    eyeColour: 'blue'
+  }
+  document.all.myArea01.value = 'person.firstname is '
+  + person.firstname
+  + '. person.lastname is '
+  + person.lastname
+  + '. person.age is '
+  + person.age
+  + '. person.eyeColour is '
+  + person.eyeColour +'.'
+}">
+
+<input type=button value="Classes" onclick="{
+  document.all.myArea01.value = JSON.stringify(document, null, 3)
+}">
+
+<br>
+<br>
+<a href="https://www.w3schools.com/tags/ref_eventattributes.asp" style="color: #000000;" target="_blank">Events site</a>
+
+</body>

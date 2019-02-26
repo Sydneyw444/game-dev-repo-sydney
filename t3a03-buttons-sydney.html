@@ -1,0 +1,59 @@
+<body style="background: linear-gradient(#E9D6FD, #594380);">
+<script>
+  function myFun(myPass) {
+    document.all.myArea01.value = myPass + 'a function called myFun()'
+  }
+</script>
+<h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Buttons by Sydney</h1>
+<a href="index.html" style="color: #000000;">Go back</a>
+  <br>
+  <br>
+<input type=button value="first click" onclick="{
+  document.getElementById('myDiv01').innerHTML= 'Welcome to programing~';
+}">
+<input type=text id="myText01" value="Sydney">
+  <br>
+<textarea id="myArea01" rows-4 cols=60></textarea>
+  <br>
+<input type=button value="Input/Output" onclick="{
+  document.all.myArea01.value = document.all.myText01.value;
+}">
+<input type=button value="Variables" onclick="{
+  myX = 3;
+  myWord = 'Dog';
+  // myArray[3] = 'Super';
+  document.all.myArea01.value = '3x3=' + myX * myX;
+}">
+<input type=text id="myText02" value=13>
+<input type=button value="Variables Squared" onclick="{
+  myX = document.all.myText02.value;
+  document.all.myArea01.value = myX + 'x2=' + myX * myX;
+}">
+<input type=button value="Variables Cubed" onclick="{
+  myX = document.all.myText02.value;
+  document.all.myArea01.value = myX + 'x3=' + myX * myX * myX;
+}">
+<input type=button value="Loop" onclick="{
+  for (myLoop= 1; myLoop <=  3; myLoop++){
+  document.getElementById('myDiv02').innerHTML= 'Loop = ' + myLoop;
+  }
+}">
+<input type=button value="Decisions" onclick="{
+  myX = 3;
+  if (myX == 3){
+    document.all.myArea01.value = 'Yes myX does equal 3. It is ' + myX;
+  }
+  else {
+    document.all.myArea01.value = 'No myX was' + myX;
+  }
+}">
+<input type=button value="Functions" onclick="{
+  myPass = 'Kinda stupid, ';
+  myFun(myPass);
+}">
+  <br>
+  <br>
+<div id="myDiv02">Loop = ?</div>
+  <br>
+<div id="myDiv01" style="font-weight: bold; font-size: 130%;"></div>
+</body>

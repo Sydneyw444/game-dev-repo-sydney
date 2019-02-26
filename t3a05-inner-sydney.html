@@ -1,4 +1,28 @@
 <body style="background: linear-gradient(#E9D6FD, #594380);">
+  <script>
+    function change_cssn(){
+            document.getElementById('myDiv01').style.cssText = '';
+        }
+    function change_css1(){
+            document.getElementById('myDiv01').style.cssText = 'background-color:#B4E184;';
+        }
+    function change_css2(){
+            document.getElementById('myDiv01').style.cssText = 'font-family: impact;';
+        }
+    function change_css3(){
+            document.getElementById('myDiv01').style.cssText = 'border:1px solid #000000;';
+        }
+    function img1() {
+            document.getElementById('myDiv01').innerHTML= '<img src="Stars-Galaxy.jpg" width=100px,>';
+        }
+    function img2() {
+            document.getElementById('myDiv01').innerHTML= '<img src="Galaxy-Stars.jpg" width=100px,>';
+        }
+    function img2() {
+            document.getElementById('myDiv01').innerHTML= '<img src="Galaxy-Stars.jpg" width=100px,>';
+        }
+
+  </script>
 <h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Inner by Sydney</h1>
 <a href="index.html" style="color: #000000;">Go back</a>
   <br>
@@ -8,15 +32,36 @@
   <br>
 <input type=text id="myText01" value="Text box">
 <div id="myDiv01">...</div>
-<input type=button value="Colored text" onclick="{
-  document.all.myDiv01.innerHTML = 'boring <font color=red> innerHTML works</font>';
+<input type=button value="Normal Text" onclick="{
+  document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
+  change_cssn();
 }">
-<!-- try other tags ie font, try css (font color and bkgnd color), try loading an image, change the image, make a table-->
-<input type=button value="TextBox" onclick="{
+<input type=button value="Coloured text" onclick="{
+  document.all.myDiv01.innerHTML = '<font color=red> innerHTML</font> is a thing';
+}">
+<input type=button value="Background colour" onclick="{
+  document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
+  change_css1();
+}">
+<input type=button value="Change font" onclick="{
+  document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
+  change_css2();
+}">
+<input type=button value="Border" onclick="{
+  document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
+  change_css3();
+}">
+<input type=button value="Image" onclick="{
+  img1()
+}">
+<input type=button value="dif Image" onclick="{
+  img2()
+}">
+
+
+
+<!--make a table-->
+<input type=button value="Text Box" onclick="{
   document.all.myDiv01.innerHTML = document.all.myText01.value;
 }">
-<!-- <input type=button value="Imge" onclick="{
-  document.all.myDiv01.innerHTML = document.all.myText01.value;
-}"> -->
-<!-- nine buttons of dif stuff -->
 </body>
