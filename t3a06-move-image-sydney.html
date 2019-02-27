@@ -19,6 +19,30 @@
         document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 35 + 'px'
         document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
     }
+    if (String.fromCharCode(event.keyCode) =='X'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 35 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 35 + 'px'
+        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
+
+    }
+    if (String.fromCharCode(event.keyCode) =='E'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 35 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 35 + 'px'
+        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
+
+    }
+    if (String.fromCharCode(event.keyCode) =='Q'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 35 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 35 + 'px'
+        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
+
+    }
+    if (String.fromCharCode(event.keyCode) =='Z'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 35 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 35 + 'px'
+        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
+
+    }
 }">
 <head>
 <style>
@@ -31,11 +55,12 @@
 }
 </style>
 </head>
+<a href="index.html" style="color: #ffffff;">Go back</a>
 <h1 align=center style="font-family: Brush Script MT; font-size: 50px; color:#ffffff;">
   Move Image by Sydney
 </h1>
-<br><br>
-<p style="color:#ffffff;">Use WASD</p>
+<p style="color:#ffffff;">Use WASD for standard movement</p>
+<p style="color:#ffffff;">Use QEZX for diagonal movement</p>
 
 <img  id="myA"  src="LilStaer.png"  style="position:absolute; width:100px; height:100px; left:30px; top:50px">
 
