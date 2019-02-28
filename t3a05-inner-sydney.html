@@ -1,4 +1,4 @@
-<body style="background: linear-gradient(#E9D6FD, #594380);">
+<body style="background: linear-gradient(#E9D6FD, #594380);" id="myBody">
   <script>
     function change_cssn(){
             document.getElementById('myDiv01').style.cssText = '';
@@ -9,19 +9,21 @@
     function change_css2(){
             document.getElementById('myDiv01').style.cssText = 'font-family: impact;';
         }
-    function change_css3(){
-            document.getElementById('myDiv01').style.cssText = 'border:1px solid #000000;';
-        }
     function img1() {
             document.getElementById('myDiv01').innerHTML= '<img src="Stars-Galaxy.jpg" width=100px,>';
         }
     function img2() {
             document.getElementById('myDiv01').innerHTML= '<img src="Galaxy-Stars.jpg" width=100px,>';
         }
-    function i553e5je3() {
-            document.getElementById('myDiv01').innerHTML= '<img src="Galaxy-Stars.jpg" width=100px,>';
+    function tab() {
+            document.getElementById('myDiv01').innerHTML= '<table border=1><tr><td>1</td><td>2</td></tr><tr><td>A</td><td>B</td></tr><tr><td>Yes</td><td>No</td></tr></table>';
         }
-
+    function bbackg(){
+            document.getElementById('myBody').style.cssText = 'background: linear-gradient(#CAF5F0, #359083);';
+        }
+    function vid() {
+            document.getElementById('myDiv01').innerHTML= '<iframe width="560" height="315" src="https://www.youtube.com/embed/jV8B24rSN5o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        }
   </script>
 <h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Inner by Sydney</h1>
 <a href="index.html" style="color: #000000;">Go back</a>
@@ -30,7 +32,7 @@
 <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp" style="color: #000000;" target="_blank">InnerHTML help page</a>
   <br>
   <br>
-<input type=text id="myText01" value="Text box">
+<input type=text id="myText01" value="Type here">
 <div id="myDiv01">...</div>
 <input type=button value="Normal Text" onclick="{
   document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
@@ -39,28 +41,31 @@
 <input type=button value="Coloured text" onclick="{
   document.all.myDiv01.innerHTML = '<font color=red> innerHTML</font> is a thing';
 }">
-<input type=button value="Background colour" onclick="{
+<input type=button value="Text Background" onclick="{
   document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
   change_css1();
+}">
+<input type=button value="Page background" onclick="{
+  bbackg()
 }">
 <input type=button value="Change font" onclick="{
   document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
   change_css2();
 }">
-<input type=button value="Border" onclick="{
-  document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
-  change_css3();
-}">
+
 <input type=button value="Image" onclick="{
   img1()
 }">
-<input type=button value="dif Image" onclick="{
+<input type=button value="Dif Image" onclick="{
   img2()
 }">
+<input type=button value="Table" onclick="{
+  tab()
+}">
+<input type=button value="Video" onclick="{
+  vid()
+}">
 
-
-
-<!--make a table-->
 <input type=button value="Text Box" onclick="{
   document.all.myDiv01.innerHTML = document.all.myText01.value;
 }">
