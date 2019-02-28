@@ -1,47 +1,50 @@
 <body onkeydown="{
-    if (String.fromCharCode(event.keyCode) =='W'){
-        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 35 + 'px'
-        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.top + ' ,  '+ document.getElementById('myB').style.top
-
+    if (event.keyCode =='87'){
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 40 + 'px'
+    }
+    if (event.keyCode == '38') {
+        document.getElementById('myB').style.top = parseInt( document.getElementById('myB').style.top) - 40 + 'px'
     }
 
-    if (String.fromCharCode(event.keyCode) =='A'){
-        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 35 + 'px'
-        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
+    if (event.keyCode =='65'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 40 + 'px'
+    }
+    if (event.keyCode =='37'){
+        document.getElementById('myB').style.left = parseInt( document.getElementById('myB').style.left) - 40 + 'px'
     }
 
-    if (String.fromCharCode(event.keyCode) =='S'){
-        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 35 + 'px'
-        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.top + ' ,  '+ document.getElementById('myB').style.top
+    if (event.keyCode =='83'){
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 40 + 'px'
+    }
+    if (event.keyCode =='40'){
+        document.getElementById('myB').style.top = parseInt( document.getElementById('myB').style.top) + 40 + 'px'
     }
 
-    if (String.fromCharCode(event.keyCode) =='D'){
-        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 35 + 'px'
-        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
+    if (event.keyCode =='68'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 40 + 'px'
     }
-    if (String.fromCharCode(event.keyCode) =='X'){
-        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 35 + 'px'
-        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 35 + 'px'
-        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
-
+    if (event.keyCode =='39'){
+        document.getElementById('myB').style.left = parseInt( document.getElementById('myB').style.left) + 40 + 'px'
     }
-    if (String.fromCharCode(event.keyCode) =='E'){
-        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 35 + 'px'
-        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 35 + 'px'
-        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
 
+    if (event.key =='x'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 40 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 40 + 'px'
     }
-    if (String.fromCharCode(event.keyCode) =='Q'){
-        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 35 + 'px'
-        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 35 + 'px'
-        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
 
+    if (event.key =='e'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 40 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 40 + 'px'
     }
-    if (String.fromCharCode(event.keyCode) =='Z'){
-        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 35 + 'px'
-        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 35 + 'px'
-        document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left + ' ,  '+ document.getElementById('myB').style.left
 
+    if (event.key =='q'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 40 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 40 + 'px'
+    }
+
+    if (event.key =='z'){
+        document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 40 + 'px'
+        document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 40 + 'px'
     }
 }">
 <head>
@@ -59,9 +62,9 @@
 <h1 align=center style="font-family: Brush Script MT; font-size: 50px; color:#ffffff;">
   Move Image by Sydney
 </h1>
-<p style="color:#ffffff;">Use WASD for standard movement</p>
+<p style="color:#ffffff;">Use WASD and ↑←↓→ for standard movement</p>
 <p style="color:#ffffff;">Use QEZX for diagonal movement</p>
 
-<img  id="myA"  src="LilStaer.png"  style="position:absolute; width:100px; height:100px; left:30px; top:50px">
-
+<img  id="myA"  src="LilStaer.png"  style="position:absolute; width:100px; height:100px; left:10px; top:50px">
+<img  id="myB"  src="LilStaer2.png"  style="position:absolute; width:100px; height:100px; left:130px; top:50px">
 </body>
