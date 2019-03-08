@@ -1,0 +1,45 @@
+<body  style="background: linear-gradient(#E9D6FD, #594380);">
+<script>
+  function goUp(){
+      document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) - 40 + 'px'
+  }
+  function goLeft(){
+      document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) - 40 + 'px'
+  }
+  function goRight(){
+      document.getElementById('myA').style.left = parseInt( document.getElementById('myA').style.left) + 40 + 'px'
+  }
+  function goDown(){
+      document.getElementById('myA').style.top = parseInt( document.getElementById('myA').style.top) + 40 + 'px'
+  }
+</script>
+
+
+<h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Auto move by Sydney</h1>
+<a href="index.html" style="color: #000000;">Go back</a>
+<br>
+<br>
+
+
+<img  id="myA"  src="KnifeCat.png"  style="position:absolute; width:413px; height:335px; left:200px; top:200px">
+
+<input type=button value="up" onclick="{
+  goUp()
+}">
+<input type=button value="left" onclick="{
+  goLeft()
+}">
+<input type=button value="right" onclick="{
+  goRight()
+}">
+<input type=button value="down" onclick="{
+  goDown()
+}">
+
+
+
+
+
+
+
+</body>
