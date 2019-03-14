@@ -1,8 +1,11 @@
-<body id="myBody"  style=" background-size: 2200px 700px;  background-image: url('MBK.jpg'); background-repeat: repeat-x;  ">
+<body id="myBody"  style=" background-size: 2200px 700px;  background-image: url('MBK.jpg'); background-repeat: repeat; ">
 <h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Auto background by Sydney</h1>
 <a href="index.html" style="color: #000000;">Go back</a>
 <br><br>
-<input type=button value="Background move" onclick="{
+<input type=button value="Background Stop" onclick="{
+   clearInterval(myCounter1)
+}">
+<input type=button value="Background left" onclick="{
        myX = 0
        myY = 0
        myCounter1 = setInterval(function(){
@@ -13,8 +16,38 @@
       }, 30);
 
 }">
-<input type=button value="Background Stop" onclick="{
-   clearInterval(myCounter1)
+<input type=button value="Background right" onclick="{
+       myX = 0
+       myY = 0
+       myCounter1 = setInterval(function(){
+             myX += 8;
+             myY += 0;
+             document.getElementById('myBody').style.backgroundPosition = myX + 'px '+ myY+'px';
+
+      }, 30);
+
+}">
+<input type=button value="Background up" onclick="{
+       myX = 0
+       myY = 0
+       myCounter1 = setInterval(function(){
+             myX += 0;
+             myY += -8;
+             document.getElementById('myBody').style.backgroundPosition = myX + 'px '+ myY+'px';
+
+      }, 30);
+
+}">
+<input type=button value="Background down" onclick="{
+       myX = 0
+       myY = 0
+       myCounter1 = setInterval(function(){
+             myX += 0;
+             myY += 8;
+             document.getElementById('myBody').style.backgroundPosition = myX + 'px '+ myY+'px';
+
+      }, 30);
+
 }">
 <center><img src="walk-gif.gif" style="postion: absolute; width:250; height: 270; margin-top:270; margin-left:0;"></center>
 </body>
