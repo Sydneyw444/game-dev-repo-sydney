@@ -1,0 +1,94 @@
+<body style="background: linear-gradient(#E9D6FD, #594380);" onkeydown="{document.getElementById('myDiv03').innerHTML = 'onKeyDown event sent the letter ' + String.fromCharCode(event.keyCode)}", onmousewheel="{document.getElementById('myDiv03').innerHTML = 'onMouseWheel event activated'}",
+>
+<script>
+  function sobs() {
+    myNumber = document.getElementById('myText01').value
+    document.getElementById('bs').innerHTML = ''
+    if (myNumber == 413) {document.getElementById('bs').innerHTML += 'Number is awesome~<br>'}
+    else {document.getElementById('bs').innerHTML += 'Number is meh<br>'}
+  }
+  function myFunArray(){
+    myArray = new Array()
+    for (myLoop =1; myLoop <=document.getElementById('myText02').value; myLoop++){
+        myArray[myLoop] = Math.round(Math.random()*10)
+  }
+    myTemp =''
+    for (myLoop =1; myLoop <=document.getElementById('myText02').value; myLoop++){
+        myTemp += 'myArray['+myLoop+']=' + myArray[myLoop] + '<br>'
+    } document.getElementById('myDiv02').innerHTML = myTemp
+  }
+  function myFunLoop() {
+    for (myLoop =1; myLoop <=document.getElementById('myText02').value; myLoop++){
+        document.getElementById('myDiv02').innerHTML += myLoop + '<br>'
+    }
+  }
+  var person = {
+  firstName : "Erin",
+  lastName  : "Stark",
+  age     : 18,
+  faveFood  : "Sushi"
+  };
+  function test() {
+    document.getElementById('myDiv04').innerHTML = 'Name: ' + person.firstName + ' ' + person.lastName + ', Age: ' + person.age + ', fave food: ' + person.faveFood + '.';
+  }
+</script>
+<h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Review by Sydney</h1>
+<a href="index.html" style="color: #000000;">Go back</a>
+<br>
+<br>
+<input type=button value="Course" onclick="{
+  document.getElementById('myDiv01').innerHTML= `<ol>
+    <li>Input/output: using text and div's
+    </li>
+    <li>
+      Variables: x=413
+    </li>
+    <li>
+      Decisions: if(x==3){} else{}
+    </li>
+    <br>
+    <li>
+      Loops: for(i = 0; i < 3; i ++){}
+    </li>
+    <li>
+      Arrays: x[0] = 3
+    </li>
+    <li>
+      Functions: function myFun(){}
+    </li>
+    <br>
+    <li>Events: onKeyDown(){}
+    </li>
+    <li>Objects: x = {'cool':'Syd':'3'}
+    </li>
+    <li>Classes: methods are fuctions and properties are arrays
+    </li>
+  </ol>`;
+}">
+<input type=button value="Basics" onclick="{
+  document.getElementById('myDiv01').innerHTML= `
+  <span>Input:</span><input type=text value=3 id='myText01'>
+  <div>Variable: 413</div>
+  <input type=button value='Decisions' onclick='{sobs()}'>
+  <div id='bs'></div>`;
+}">
+<input type=button value="Medium" onclick="{
+  document.getElementById('myDiv01').innerHTML= `
+    <input id='myText02' type=number value=5>
+    <br>
+    <input type=button value='Loop' onclick='{myFunLoop()}'>
+    <br>
+    <input type=button value='Array' onclick='{myFunArray()}'>
+    <div id='myDiv02'>Using functions to call loops and arrays.<br></div>
+  `;
+}">
+<input type=button value="Advanced" onclick="{
+  document.getElementById('myDiv01').innerHTML= `
+  <div id='myDiv03'>onKeyDown and onMouseWheel events</div>
+  <input type=button value=Objects onclick='test()'>
+  <div id='myDiv04'></div>
+  `;
+}">
+<div id="myDiv01">. . .</div>
+
+</body>
