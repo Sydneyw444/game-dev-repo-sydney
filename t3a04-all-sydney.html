@@ -1,19 +1,39 @@
-<body style="background: linear-gradient(#E9D6FD, #594380);">
+<body style="background: linear-gradient(#E9D6FD, #594380);"
+onkeydown="{document.getElementById('myArea01').innerHTML = 'onKeyDown event sent the letter ' + String.fromCharCode(event.keyCode)}",
+onkeyup="{document.getElementById('myArea01').innerHTML = 'onKeyUp event sent the letter ' + String.fromCharCode(event.keyCode)}",
+onload="myOnLoad()",
+onmousewheel="{document.getElementById('myArea01').innerHTML = 'onMouseWheel event activated'}",
+ontouchstart="myTouchStart()",
+ontouchmove="myTouchMove()",
+ontouchend="myTouchEnd()",
+>
 <script>
   function my01(){
-    document.all.myArea01.value = 'wow it worked'
+    document.getElementById('myArea01').innerHTML = 'wow it worked'
   }
   function my02(){
-    document.all.myArea01.value = document.all.myText01.value
+    document.getElementById('myArea01').innerHTML = document.all.myText01.value
+  }
+  function myOnLoad() {
+      document.getElementById('myArea01').innerHTML = 'onLoad event activated';
+  }
+  function myTouchStart() {
+      document.getElementById('myArea01').innerHTML = '<p style="color:MediumSeaGreen;">onTouchStart event activated</p>';
+  }
+  function myTouchMove() {
+      document.getElementById('myArea01').innerHTML = '<p style="color:SlateBlue;">onTouchMove event activated</p>';
+  }
+  function myTouchEnd() {
+      document.getElementById('myArea01').innerHTML = '<p style="color:tomato;">onTouchEnd event activated</p>';
   }
 </script>
 <h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">All by Sydney</h1>
 <a href="index.html" style="color: #000000;">Go back</a>
 <br>
 <br>
-<input type=text id="myText01" value="7">
+<input type=number id="myText01" value="7">
 <br>
-<textarea id="myArea01" rows=4 cols=70></textarea>
+<textarea id="myArea01" rows=8 cols=60></textarea>
 <br>
 <input type=button value="loops" onclick="{
   var text = '';
@@ -28,15 +48,15 @@
 }">
 
 <input type=button value="Input and function" onclick="{
-  document.all.myArea01.value = document.all.myText01.value
+  document.getElementById('myArea01').innerHTML = document.all.myText01.value
 }">
 <input type=button value="Decisions" onclick="{
   x = document.all.myText01.value
   if (x == 9){
-    document.all.myArea01.value = 'itS A NINEEEEE!'
+    document.getElementById('myArea01').innerHTML = 'itS A NINEEEEE!'
   }
   else {
-    document.all.myArea01.value = 'its not a nine...'
+    document.getElementById('myArea01').innerHTML = 'its not a nine...'
   }
 }">
 
@@ -46,13 +66,19 @@
   myArray[1] = 'Meagan'
   myArray[2] = 'Alexis'
   myArray[3] = 'Chelsie'
-  document.all.myArea01.value = ''
+  document.getElementById('myArea01').innerHTML = ''
   for (x = 1; x <= myMax; x++){
-    document.all.myArea01.value += myArray[x] + ', '
+    document.getElementById('myArea01').innerHTML += myArray[x] + ', '
   }
 }">
 <input type=button value="Events onMouseOver" onmouseover="{
-  document.all.myArea01.value = 'Trash'
+  document.getElementById('myArea01').innerHTML = 'Trash'
+}">
+<input type=button value="OnClick" onclick="{
+    document.getElementById('myArea01').innerHTML = 'onClick event activated'
+}">
+<input type=button value="OnDoubleClick" ondblclick="{
+    document.getElementById('myArea01').innerHTML = 'onDoubleClick event activated'
 }">
 <input type=button value="Object Example" onclick="{
   person = {
@@ -61,7 +87,7 @@
     age: 19,
     eyeColour: 'blue'
   }
-  document.all.myArea01.value = 'person.firstname is '
+  document.getElementById('myArea01').innerHTML = 'person.firstname is '
   + person.firstname
   + '. person.lastname is '
   + person.lastname
@@ -70,13 +96,12 @@
   + '. person.eyeColour is '
   + person.eyeColour +'.'
 }">
-
 <input type=button value="Classes" onclick="{
-  document.all.myArea01.value = JSON.stringify(document, null, 3)
+  document.getElementById('myArea01').innerHTML = JSON.stringify(document, null, 3)
 }">
+<br>
+<p>Extra options: onKeyDown, onKeyUp, onMouseWeel, onTouchStart, onTouchStart, onTouchEnd</p>
 
-<br>
-<br>
 <a href="https://www.w3schools.com/tags/ref_eventattributes.asp" style="color: #000000;" target="_blank">Events site</a>
 
 </body>

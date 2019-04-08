@@ -24,6 +24,9 @@
     function vid() {
             document.getElementById('myDiv01').innerHTML= '<iframe width="560" height="315" src="https://www.youtube.com/embed/jV8B24rSN5o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
         }
+    function bbackg2(){
+            document.getElementById('myBody').style.cssText = 'background: url("Stars4.png")';
+        }
   </script>
 <h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Inner by Sydney</h1>
 <a href="index.html" style="color: #000000;">Go back</a>
@@ -45,8 +48,11 @@
   document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
   change_css1();
 }">
-<input type=button value="Page background" onclick="{
+<input type=button value="Webpage background" onclick="{
   bbackg()
+}">
+<input type=button value="Webpage image background" onclick="{
+  bbackg2()
 }">
 <input type=button value="Change font" onclick="{
   document.all.myDiv01.innerHTML = '<span>innerHTML is a thing</span>';
@@ -69,4 +75,5 @@
 <input type=button value="Text Box" onclick="{
   document.all.myDiv01.innerHTML = document.all.myText01.value;
 }">
+
 </body>
