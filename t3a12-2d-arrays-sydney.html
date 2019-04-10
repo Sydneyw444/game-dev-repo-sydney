@@ -1,0 +1,140 @@
+<body style="background: linear-gradient(#E9D6FD, #594380);">
+<h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">2d Arrays by Sydney</h1>
+<a href="index.html" style="color: #000000;">Go back</a>
+<br>
+<br>
+<input type=button value="Create 2d Array" onClick="{
+  document.getElementById('myDiv01').innerHTML = ''
+  let myChart = new Array()
+
+  myChart[0] = new Array()
+  myChart[1] = new Array()
+  myChart[2] = new Array()
+  myChart[3] = new Array()
+  myChart[4] = new Array()
+
+  myChart[0][0] = 'Flame type'
+  myChart[1][1] = 'Colour'
+  myChart[1][0] = 'Aspect'
+  myChart[0][1] = 'Sky'
+  myChart[0][2] = 'Storm'
+  myChart[2][2] = 'Rain'
+  myChart[2][0] = 'Sun'
+  myChart[1][2] = 'Lightning'
+  myChart[2][1] = 'Mist'
+  myChart[3][0] = 'Cloud'
+  myChart[0][3] = 'Orange'
+  myChart[3][3] = 'Red'
+  myChart[3][1] = 'Blue'
+  myChart[1][3] = 'Yellow'
+  myChart[3][2] = 'Green'
+  myChart[2][3] = 'Indigo'
+  myChart[0][4] = 'Violet'
+  myChart[4][0] = 'Harmony'
+  myChart[4][4] = 'Disintegration'
+  myChart[4][1] = 'Tranquility'
+  myChart[1][4] = 'Activation'
+  myChart[4][2] = 'Hardining'
+  myChart[2][4] = 'Construction'
+  myChart[4][3] = 'Propagation'
+
+
+  document.getElementById('myDiv01').innerHTML += `
+    <table border=7>
+      <tr>
+        <td>
+          ${myChart[0][0]}
+        </td>
+        <td>
+          ${myChart[1][1]}
+        </td>
+        <td>
+          ${myChart[1][0]}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ${myChart[0][1]}
+        </td>
+        <td>
+          ${myChart[0][3]}
+        </td>
+        <td>
+          ${myChart[4][0]}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ${myChart[0][2]}
+        </td>
+        <td>
+          ${myChart[3][3]}
+        </td>
+        <td>
+          ${myChart[4][4]}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ${myChart[2][2]}
+        </td>
+        <td>
+          ${myChart[3][1]}
+        </td>
+        <td>
+          ${myChart[4][1]}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ${myChart[2][0]}
+        </td>
+        <td>
+          ${myChart[1][3]}
+        </td>
+        <td>
+          ${myChart[1][4]}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ${myChart[1][2]}
+        </td>
+        <td>
+          ${myChart[3][2]}
+        </td>
+        <td>
+          ${myChart[4][2]}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ${myChart[2][1]}
+        </td>
+        <td>
+          ${myChart[2][3]}
+        </td>
+        <td>
+          ${myChart[2][4]}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ${myChart[3][0]}
+        </td>
+        <td>
+          ${myChart[0][4]}
+        </td>
+        <td>
+          ${myChart[4][3]}
+        </td>
+      </tr>
+
+    </table>
+  `
+}">
+<br><br>
+
+<div id="myDiv01">[...]</div>
+
+</body>
