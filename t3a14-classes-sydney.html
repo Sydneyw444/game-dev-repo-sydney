@@ -1,0 +1,31 @@
+<body style="background: linear-gradient(#E9D6FD, #594380);">
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Classes by Sydney</h1>
+<a href="index.html" style="color: #000000;">Go back</a>
+<br><br>
+
+<input id="myButton01" type="button" value="Make and show the class myAnimal" onclick="{
+  class myAnimal {
+    constructor(passName, passScare) {
+      this.myName = passName;
+      this.myScare = passScare;
+    }
+    myShow(){
+      document.getElementById('myDiv01').innerHTML= 'Hello this is ' + this.myName + '. He\'s ' + this.myScare + '. Help. <br> <img src=ummmmm.jpg>'
+    }
+  }
+  myDog = new myAnimal('Nightmare', 'utterly horrifying')
+  myDog.myShow()
+}">
+<br><br>
+<div id="myDiv01">...</div>
+<br>
+<input type="button" value="Use ResponsiveCode" onclick="{
+  responsiveVoice.speak('Help, please help. It has me.')
+}">
+<br><br>
+<input type="button" value="Initilize speak" onclick="{
+  responsiveVoice.speak('I want die', 'US English Female', {pitch: 1, rate:1, volume: 1})
+}">
+
+</body>
