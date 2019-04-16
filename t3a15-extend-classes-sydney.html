@@ -1,0 +1,55 @@
+<body style="background: linear-gradient(#E9D6FD, #594380);">
+<h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Extend Classes by Sydney</h1>
+<a href="index.html" style="color: #000000;">Go back</a>
+<br><br>
+<input id="myButton01" type="button" value="Extend a class 1" onclick="{
+  class myAnimal {
+    constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+    myShow(){
+      document.getElementById('myDiv01').innerHTML= 'Hello ' + this.myName + '. You are ' + this.myAge + ' years old'
+    }
+  }
+  class myCat extends myAnimal {
+    myShow(){
+      document.getElementById('myDiv01').innerHTML= this.myName + ' is a great cat who is ' + this.myAge + ' years old and is a master of blades! Here\'s what she looks like ~ <br> <img src=KnifeCatSmol.png>'
+    }
+  }
+  myPet = new myCat('Nyx', 4)
+  myPet.myShow()
+}">
+<input id="myButton01" type="button" value="Extend a class 2" onclick="{
+  class myAnimal {
+    constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+  }
+  class myBird extends myAnimal {
+    myShow(){
+      document.getElementById('myDiv01').innerHTML= this.myName + ' is small fuzz ball that is ' + this.myAge + ' years old and a cute little bird. Here\'s what they look like ~ <br> <img src=Fuzz.png>'
+    }
+  }
+  myPet = new myBird('Floofy', 2)
+  myPet.myShow()
+}">
+<input id="myButton01" type="button" value="Extend a class 3" onclick="{
+  class myAnimal {
+    constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+  }
+  class myLizard extends myAnimal {
+    myShow(){
+      document.getElementById('myDiv01').innerHTML= this.myName + ' is shapeshifting chameleon that is ' + this.myAge + ' years old and can take any shape he wants. Here\'s what he look like ~ <br> <img src=khrLeon.png>'
+    }
+  }
+  myPet = new myLizard('Leon', '31')
+  myPet.myShow()
+}">
+<br><br>
+<div id="myDiv01">...</div>
+</body>
