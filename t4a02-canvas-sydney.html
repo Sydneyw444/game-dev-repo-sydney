@@ -6,26 +6,43 @@
 <input type=button value=".lineTo(30,200)" onclick="{
    myContext.beginPath();
    myContext.lineWidth = 1;
-   myContext.moveTo(20,10);
-   myContext.lineTo(30,200);
+   myContext.moveTo(1,1);
+   myContext.lineTo(1670,1000);
    myContext.stroke();
 }">
 <input type=button value=".arc(95, 50, 40, 0, 2 * Math.PI)" onclick="{
    myContext.beginPath();
    myContext.lineWidth = 10;
-   myContext.strokeStyle = 'green';
+   myContext.strokeStyle = '#A3E4D7';
    myContext.arc(95, 50, 40, 0, 2 * Math.PI);
    myContext.stroke();
 }">
-<input type=button value=".fillText('Hello World', 400, 100)" onclick="{
+<input type=button value=".fillText('Worship me', 400, 100)" onclick="{
    myContext.font = '20px Arial';
-   myContext.fillText('Hello World', 400, 100);
+   myContext.fillText('Worship me', 400, 100);
 
    myContext.translate(400, 100);
-   myContext.rotate(60 * Math.PI / 180);
+   myContext.rotate(50 * Math.PI / 180);
 
-   myContext.fillText('Hello World', 10, 10);
+   myContext.fillText('Worship me', 10, 10);
    myContext.stroke();
+
+   myContext.rotate(50 * Math.PI / 160);
+   myContext.fillText('Worship me', 10, 10);
+   myContext.stroke();
+
+   myContext.rotate(50 * Math.PI / 160);
+   myContext.fillText('Worship me', 10, 10);
+   myContext.stroke();
+
+   myContext.rotate(50 * Math.PI / 160);
+   myContext.fillText('Worship me', 10, 10);
+   myContext.stroke();
+
+   myContext.rotate(50 * Math.PI / 160);
+   myContext.fillText('Worship me', 10, 10);
+   myContext.stroke();
+
 
    myContext.resetTransform();
 }">
@@ -35,26 +52,55 @@
    myContext.quadraticCurveTo(100,220,240,110);
    myContext.stroke();
 }">
-<input type=button value=".createLinearGradient(100, 300, 200, 400)" onclick="{
-   let myGradient = myContext.createLinearGradient(100, 300, 200, 400);
+
+<input type=button value=".quadraticCurveVersion2(100,220,240,110)" onclick="{
+   myContext.beginPath();
+   myContext.moveTo(210,310);
+   myContext.quadraticCurveTo(130,210,270,320);
+   myContext.stroke();
+   myContext.beginPath();
+   myContext.moveTo(600,200);
+   myContext.quadraticCurveTo(130,310,270,120);
+   myContext.stroke();
+   myContext.beginPath();
+   myContext.moveTo(1200,400);
+   myContext.quadraticCurveTo(130,210,270,120);
+   myContext.stroke();
+   myContext.beginPath();
+   myContext.moveTo(120,40);
+   myContext.quadraticCurveTo(330,210,270,320);
+   myContext.stroke();
+   myContext.beginPath();
+   myContext.moveTo(12,4);
+   myContext.quadraticCurveTo(130,210,370,120);
+   myContext.stroke();
+}">
+
+<input type=button value=".createLinearGradient(100, 300, 400, 300)" onclick="{
+   let myGradient = myContext.createLinearGradient(100, 300, 400, 300);
    myGradient.addColorStop(0, '#2ECC71');
    myGradient.addColorStop(0.5, '#A3E4D7');
-   myGradient.addColorStop(1, '#2980B9');
+   myGradient.addColorStop(0.75, '#2980B9');
+   myGradient.addColorStop(1, '#6D4ECD');
    myContext.fillStyle = myGradient;
-   myContext.fillRect(100, 300, 200, 400);
+   myContext.fillRect(100, 100, 400, 300);
    myContext.fillStyle = 'black';
 }">
+
 <br><br>
+
 <input type=button value="clearRect(20, 20, 50, 50)" onclick="{
-   myContext.clearRect(20, 20, 50, 50);
+   myContext.clearRect(20, 20, 100, 100);
 }">
+
 <input type=button value="Clear all" onclick="{
    myContext.clearRect(0, 0, myCanvas.width, myCanvas.height);
 }">
+
 <br><br>
 <canvas id="myCoolTag" width="1000" height="600" style="border:1px solid #000000;"></canvas>
 <script>
-   let myCanvas=document.getElementById('myCoolTag');
-   let myContext=myCanvas.getContext('2d');
+    let myCanvas=document.getElementById('myCoolTag');
+    let myContext=myCanvas.getContext('2d');
 </script>
 </body>
