@@ -1,0 +1,46 @@
+<body style="background: linear-gradient(#E9D6FD, #594380);"
+  onUnload="{
+     localstorage.setItem('myStoredText',document.getElementById('myText01').value)
+     localstorage.setItem('myStoredNumber',document.getElementById('myText02').value)
+     localstorage.setItem('myStoredDecimal',document.getElementById('myText03').value)
+  }">
+
+ <h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Local Storage by Sydney</h1>
+ <a href="index.html" style="color: #000000;">Go back</a>
+ <br><br>
+
+<input id="myText01" type=text size=70 value="I am awesome"><br>
+<input type="button" value="Store Text" onClick="{
+   localStorage.setItem('myStoredText', document.getElementById('myText01').value)
+   document.getElementById('myDiv01').innerHTML= document.getElementById('myText01').value + ' \nHas been stored'
+   document.getElementById('myText01').value =''
+}">
+<input type="button" value="Retrieve Text" onClick="{
+   document.getElementById('myText01').value = localStorage.getItem('myStoredText')
+}">
+
+<br><br>
+<input id="myText02" type=text size=70 value="666"><br>
+
+<input type="button" value="Store Number" onClick="{
+   localStorage.setItem('myStoredNumber', document.getElementById('myText02').value)
+   document.getElementById('myDiv01').innerHTML= document.getElementById('myText02').value + ' \nHas been stored'
+   document.getElementById('myText02').value =''
+}">
+
+<input type="button" value="Retrieve Number" onClick="{
+   document.getElementById('myText02').value = localStorage.getItem('myStoredNumber')
+}">
+<br><br>
+<input id="myText03" type=text size=70 value="4.13"><br>
+<input type="button" value="Store Decimal" onClick="{
+   localStorage.setItem('myStoredDecimal', document.getElementById('myText03').value)
+   document.getElementById('myDiv01').innerHTML= document.getElementById('myText03').value + ' \nHas been stored'
+   document.getElementById('myText03').value =''
+}">
+<input type="button" value="Retrieve Number" onClick="{
+   document.getElementById('myText03').value = localStorage.getItem('myStoredDecimal')
+}">
+
+<div id="myDiv01">...</div>
+</body>
