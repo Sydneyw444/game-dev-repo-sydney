@@ -1,0 +1,43 @@
+<body style="background: linear-gradient(#E9D6FD, #594380);">
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<h1 align=center style="font-family: Brush Script MT;  font-size: 40px;">Classes by Sydney</h1>
+<a href="index.html" style="color: #000000;">Go back</a>
+<br><br>
+
+<script>
+var myLooping = 0
+var mySpeed = 10
+var myDirection = 1
+var myTotal = 0
+</script>
+
+<img src="LilStaer.png" id="star" style="position:relative;
+z-index:-1; left:0px; top:0px; height:100px; width:100px;">
+
+<br><br><br><br>
+
+<input type=text id="myScore" value=0>
+
+<input type=button value="auto right" onclick="{
+   clearInterval(myLooping)
+   myLooping = setInterval(function(){
+   mySpeed = (Math.floor(Math.random()*50)+5) * myDirection
+   document.getElementById('star').style.left =
+   parseInt(document.getElementById('star').style.left) + mySpeed + 'px'
+   if (parseInt(document.getElementById('star').style.left) > 200){
+     myDirection = myDirection * -1
+     myTotal = myTotal + 1
+     document.getElementById('myScore').value = myTotal
+   }
+   if (parseInt(document.getElementById('star').style.left) < 10){
+     myDirection = myDirection * -1
+     myTotal = myTotal + 1
+     document.getElementById('myScore').value = myTotal
+   }
+  console.log(mySpeed)
+  }, 60)
+}">
+
+
+
+</body>
